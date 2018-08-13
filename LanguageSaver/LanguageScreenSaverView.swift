@@ -38,9 +38,9 @@ class LanguageScreenSaverView: ScreenSaverView {
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
 
-        NSColor.white.setFill()
+        NSColor.black.setFill()
         __NSRectFill(self.bounds)
-        NSColor.black.set()
+        NSColor.white.set()
     }
 
 
@@ -65,10 +65,14 @@ class LanguageScreenSaverView: ScreenSaverView {
 class Label: NSTextView {
     init(text: String, size: CGFloat, frame: NSRect) {
         super.init(frame: frame)
-        string = text
+
         alignment = NSTextAlignment.center
         font = NSFont.userFont(ofSize: size)
         isEditable = false
+
+        backgroundColor = .black
+        textColor = .white
+        string = text
     }
 
     func makeBold() {
