@@ -45,6 +45,10 @@ class LanguageScreenSaverView: ScreenSaverView {
 
 
     @objc func cycleWords() {
+        if remainingEntries.count == 0 {
+            remainingEntries = allEntries
+        }
+
         let index = Int(arc4random_uniform(UInt32(remainingEntries.count)))
 
         title.update(text: remainingEntries[index].word)
