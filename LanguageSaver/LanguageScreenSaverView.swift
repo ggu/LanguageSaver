@@ -32,7 +32,6 @@ class LanguageScreenSaverView: ScreenSaverView {
 
         timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(cycleWords), userInfo: nil, repeats: true)
         timer.fire()
-
     }
 
     override func draw(_ dirtyRect: NSRect) {
@@ -83,6 +82,7 @@ class Label: NSTextView {
 
     func update(text: String) {
         string = text
+        needsDisplay = true
     }
 
     override init(frame frameRect: NSRect, textContainer container: NSTextContainer?) {
