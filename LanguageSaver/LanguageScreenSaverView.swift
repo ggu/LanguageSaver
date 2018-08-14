@@ -10,16 +10,30 @@ import Cocoa
 import ScreenSaver
 
 class LanguageScreenSaverView: ScreenSaverView {
+    @IBOutlet var configurePanel: NSPanel!
+    @IBOutlet weak var popupButton: NSPopUpButton!
+
     var title: Label = Label(text: "", size: 80, frame: NSRect())
     var subtitle: Label = Label(text: "", size: 40, frame: NSRect())
-    var allEntries = HSKDictionaryReader(fileName: "hsk2").getEntries()
+    var allEntries: [DictionaryEntry] = []
     var remainingEntries: [DictionaryEntry] = []
     var timer = Timer()
+
+    var defaults: UserDefaults?
+
+    static let LevelKey = "level"
 
     override init?(frame: NSRect, isPreview: Bool) {
         super.init(frame: frame, isPreview: isPreview)
 
+        if let bundleIdentifier = Bundle(for: LanguageScreenSaverView.self).bundleIdentifier {
+            defaults = ScreenSaverDefaults.init(forModuleWithName: bundleIdentifier )
+        }
+
         if !isPreview {
+            Swift.print(getLanguageLevel())
+
+            allEntries = HSKDictionaryReader(fileName: getFileName()).getEntries()
             remainingEntries = allEntries
 
             let titleFrame = NSRect(x: 0, y: bounds.height / 2 + 200, width: bounds.width, height: 100)
@@ -56,6 +70,54 @@ class LanguageScreenSaverView: ScreenSaverView {
         subtitle.update(text: remainingEntries[index].definition)
 
         remainingEntries.remove(at: index)
+    }
+
+    @IBAction func cancelClicked(_ sender: NSButton) {
+        NSApp.endSheet(configurePanel)
+    }
+
+    @IBAction func okClicked(_ sender: NSButton) {
+        let level = popupButton.indexOfSelectedItem + 1
+        setLanguage(level: level)
+
+        NSApp.endSheet(configurePanel)
+    }
+
+    private func setLanguage(level: Int) {
+        defaults?.set(level, forKey: LanguageScreenSaverView.LevelKey)
+        defaults?.synchronize()
+    }
+
+    private func getLanguageLevel() -> Int {
+        if let level = defaults?.object(forKey: LanguageScreenSaverView.LevelKey) as? Int {
+            return level
+        }
+        return 1
+    }
+
+    private func getFileName() -> String {
+        return "hsk\(getLanguageLevel())"
+    }
+
+    override var hasConfigureSheet: Bool {
+        get {
+            return true
+        }
+    }
+
+    override var configureSheet: NSWindow? {
+        get {
+            Bundle(for: LanguageScreenSaverView.self).loadNibNamed(NSNib.Name(rawValue: "ConfigureSheet"), owner: self, topLevelObjects: nil)
+
+            if let bundleIdentifier = Bundle(for: LanguageScreenSaverView.self).bundleIdentifier {
+                defaults = ScreenSaverDefaults.init(forModuleWithName: bundleIdentifier )
+            }
+
+            let languageLevelIndex = getLanguageLevel() - 1
+            popupButton.selectItem(at: languageLevelIndex)
+
+            return configurePanel
+        }
     }
 
     required init?(coder decoder: NSCoder) {
@@ -131,7 +193,7 @@ class HSKDictionaryReader {
 
     private func getTextFileContents() -> String {
         do {
-            if let path = Bundle(for: LanguageScreenSaverView.self).path(forResource: "hsk2", ofType: "txt") {
+            if let path = Bundle(for: LanguageScreenSaverView.self).path(forResource: fileName, ofType: "txt") {
                 return try String(contentsOfFile: path, encoding: String.Encoding.utf8)
             }
         } catch {
