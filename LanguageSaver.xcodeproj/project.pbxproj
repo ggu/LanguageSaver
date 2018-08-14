@@ -10,6 +10,11 @@
 		76FB31DC2120DBF100A1A4BB /* LanguageScreenSaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB31DB2120DBF100A1A4BB /* LanguageScreenSaverView.swift */; };
 		76FB31E2212125D900A1A4BB /* hsk2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 76FB31E1212125D900A1A4BB /* hsk2.txt */; };
 		76FB31E42121373400A1A4BB /* LanguageSaver.saver in CopyFiles */ = {isa = PBXBuildFile; fileRef = 76FB31CE2120DB3A00A1A4BB /* LanguageSaver.saver */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		76FB31EF2122559800A1A4BB /* hsk5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 76FB31EA2122559800A1A4BB /* hsk5.txt */; };
+		76FB31F02122559800A1A4BB /* hsk3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 76FB31EB2122559800A1A4BB /* hsk3.txt */; };
+		76FB31F12122559800A1A4BB /* hsk4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 76FB31EC2122559800A1A4BB /* hsk4.txt */; };
+		76FB31F22122559800A1A4BB /* hsk1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 76FB31ED2122559800A1A4BB /* hsk1.txt */; };
+		76FB31F32122559800A1A4BB /* hsk6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 76FB31EE2122559800A1A4BB /* hsk6.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +35,11 @@
 		76FB31D52120DB3A00A1A4BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76FB31DB2120DBF100A1A4BB /* LanguageScreenSaverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageScreenSaverView.swift; sourceTree = "<group>"; };
 		76FB31E1212125D900A1A4BB /* hsk2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hsk2.txt; sourceTree = "<group>"; };
+		76FB31EA2122559800A1A4BB /* hsk5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hsk5.txt; sourceTree = "<group>"; };
+		76FB31EB2122559800A1A4BB /* hsk3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hsk3.txt; sourceTree = "<group>"; };
+		76FB31EC2122559800A1A4BB /* hsk4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hsk4.txt; sourceTree = "<group>"; };
+		76FB31ED2122559800A1A4BB /* hsk1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hsk1.txt; sourceTree = "<group>"; };
+		76FB31EE2122559800A1A4BB /* hsk6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hsk6.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +73,12 @@
 			isa = PBXGroup;
 			children = (
 				76FB31DB2120DBF100A1A4BB /* LanguageScreenSaverView.swift */,
+				76FB31ED2122559800A1A4BB /* hsk1.txt */,
 				76FB31E1212125D900A1A4BB /* hsk2.txt */,
+				76FB31EB2122559800A1A4BB /* hsk3.txt */,
+				76FB31EC2122559800A1A4BB /* hsk4.txt */,
+				76FB31EA2122559800A1A4BB /* hsk5.txt */,
+				76FB31EE2122559800A1A4BB /* hsk6.txt */,
 				76FB31D52120DB3A00A1A4BB /* Info.plist */,
 			);
 			path = LanguageSaver;
@@ -139,7 +154,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76FB31F12122559800A1A4BB /* hsk4.txt in Resources */,
 				76FB31E2212125D900A1A4BB /* hsk2.txt in Resources */,
+				76FB31F02122559800A1A4BB /* hsk3.txt in Resources */,
+				76FB31EF2122559800A1A4BB /* hsk5.txt in Resources */,
+				76FB31F32122559800A1A4BB /* hsk6.txt in Resources */,
+				76FB31F22122559800A1A4BB /* hsk1.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
