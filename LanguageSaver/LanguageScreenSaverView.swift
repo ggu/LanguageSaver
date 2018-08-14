@@ -19,19 +19,21 @@ class LanguageScreenSaverView: ScreenSaverView {
     override init?(frame: NSRect, isPreview: Bool) {
         super.init(frame: frame, isPreview: isPreview)
 
-        remainingEntries = allEntries
+        if !isPreview {
+            remainingEntries = allEntries
 
-        let titleFrame = NSRect(x: 0, y: bounds.height / 2 + 200, width: bounds.width, height: 100)
-        title.frame = titleFrame
-        title.makeBold()
-        addSubview(title)
+            let titleFrame = NSRect(x: 0, y: bounds.height / 2 + 200, width: bounds.width, height: 100)
+            title.frame = titleFrame
+            title.makeBold()
+            addSubview(title)
 
-        let subtitleFrame = NSRect(x: 0, y: bounds.height / 2 - 50, width: bounds.width, height: 100)
-        subtitle.frame = subtitleFrame
-        addSubview(subtitle)
+            let subtitleFrame = NSRect(x: 0, y: bounds.height / 2 - 50, width: bounds.width, height: 100)
+            subtitle.frame = subtitleFrame
+            addSubview(subtitle)
 
-        timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(cycleWords), userInfo: nil, repeats: true)
-        timer.fire()
+            timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(cycleWords), userInfo: nil, repeats: true)
+            timer.fire()
+        }
     }
 
     override func draw(_ dirtyRect: NSRect) {
@@ -48,7 +50,7 @@ class LanguageScreenSaverView: ScreenSaverView {
             remainingEntries = allEntries
         }
 
-        let index = Int(arc4random_uniform(UInt32(remainingEntries.count)))
+        let index = Int(SSRandomIntBetween(0, Int32(remainingEntries.count)))
 
         title.update(text: remainingEntries[index].word)
         subtitle.update(text: remainingEntries[index].definition)
