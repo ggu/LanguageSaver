@@ -53,6 +53,8 @@ class LanguageScreenSaverView: ScreenSaverView {
 
             timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(cycleRight), userInfo: nil, repeats: true)
             timer.fire()
+        } else {
+            NSColor.white.setFill()
         }
     }
 
@@ -168,14 +170,13 @@ class LanguageScreenSaverView: ScreenSaverView {
     override var acceptsFirstResponder: Bool { get { return true } }
 
     @IBAction func cancelClicked(_ sender: NSButton) {
-        //NSApp.endSheet(configurePanel)
+        window?.endSheet(configurePanel)
     }
 
     @IBAction func okClicked(_ sender: NSButton) {
         let level = popupButton.indexOfSelectedItem + 1
         setLanguage(level: level)
-
-        //NSApp.endSheet(configurePanel)
+        window?.endSheet(configurePanel)
     }
 
     private func setLanguage(level: Int) {
