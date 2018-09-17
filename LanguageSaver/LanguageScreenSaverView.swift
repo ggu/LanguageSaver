@@ -16,7 +16,12 @@ class LanguageScreenSaverView: ScreenSaverView {
     var title: Label = Label(text: "", size: 80, frame: NSRect())
     var subtitle: Label = Label(text: "", size: 40, frame: NSRect())
     var allEntries: [DictionaryEntry] = []
-    var remainingEntries: [DictionaryEntry] = []
+//    var prevEntries: [DictionaryEntry] = []
+//    var prevEntries: [DictionaryEntry] = []
+
+    var currentIndex = 0
+
+//    var remainingEntries: [DictionaryEntry] = []
     var timer = Timer()
 
     var defaults: UserDefaults?
@@ -34,7 +39,8 @@ class LanguageScreenSaverView: ScreenSaverView {
             Swift.print(getLanguageLevel())
 
             allEntries = HSKDictionaryReader(fileName: getFileName()).getEntries()
-            remainingEntries = allEntries
+            allEntries.shuffle()
+//            remainingEntries = allEntries
 
             let titleFrame = NSRect(x: 0, y: bounds.height / 2 + 200, width: bounds.width, height: 100)
             title.frame = titleFrame
@@ -45,7 +51,7 @@ class LanguageScreenSaverView: ScreenSaverView {
             subtitle.frame = subtitleFrame
             addSubview(subtitle)
 
-            timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(cycleWords), userInfo: nil, repeats: true)
+            timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(cycleRight), userInfo: nil, repeats: true)
             timer.fire()
         }
     }
@@ -59,28 +65,117 @@ class LanguageScreenSaverView: ScreenSaverView {
     }
 
 
-    @objc func cycleWords() {
-        if remainingEntries.count == 0 {
-            remainingEntries = allEntries
+    @objc func cycleRight() {
+        currentIndex += 1
+
+        if currentIndex == allEntries.count {
+            currentIndex = 0
         }
-
-        let index = Int(SSRandomIntBetween(0, Int32(remainingEntries.count)))
-
-        title.update(text: remainingEntries[index].word)
-        subtitle.update(text: remainingEntries[index].definition)
-
-        remainingEntries.remove(at: index)
+        title.update(text: allEntries[currentIndex].word)
+        subtitle.update(text: allEntries[currentIndex].definition)
     }
 
+    @objc func cycleLeft() {
+        currentIndex -= 1
+
+        if currentIndex == 0 {
+            currentIndex = allEntries.count - 1
+        }
+        title.update(text: allEntries[currentIndex].word)
+        subtitle.update(text: allEntries[currentIndex].definition)
+    }
+
+    override func flagsChanged(with event: NSEvent) {
+        cycleLeft()
+        super.flagsChanged(with: event)
+    }
+
+    override func moveLeft(_ sender: Any?) {
+        cycleLeft()
+        super.moveLeft(sender)
+    }
+
+    override var canBecomeKeyView: Bool {
+        get {
+            return true
+        }
+    }
+
+    override func lockFocus() {
+        super.lockFocus()
+        cycleLeft()
+
+    }
+
+    override func keyDown(with event: NSEvent) {
+        super.keyDown(with: event)
+        cycleLeft()
+
+        switch Int(event.keyCode) {
+        case 123:
+            cycleLeft()
+            timer.invalidate()
+            timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(cycleRight), userInfo: nil, repeats: true)
+        case 124:
+            timer.fire()
+            timer.invalidate()
+            timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(cycleRight), userInfo: nil, repeats: true)
+        case NSLeftArrowFunctionKey:
+            cycleLeft()
+            timer.invalidate()
+            timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(cycleRight), userInfo: nil, repeats: true)
+        case NSRightArrowFunctionKey:
+            cycleRight()
+            timer.invalidate()
+            timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(cycleRight), userInfo: nil, repeats: true)
+        default:
+            break
+        }
+    }
+
+    override func performKeyEquivalent(with event: NSEvent) -> Bool {
+        cycleLeft()
+        super.performKeyEquivalent(with: event)
+        return true
+    }
+
+
+    override func keyUp(with event: NSEvent) {
+        cycleLeft()
+        super.keyUp(with: event)
+        switch Int(event.keyCode) {
+        case 123:
+            cycleLeft()
+            timer.invalidate()
+            timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(cycleRight), userInfo: nil, repeats: true)
+        case 124:
+            timer.fire()
+            timer.invalidate()
+            timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(cycleRight), userInfo: nil, repeats: true)
+        case NSLeftArrowFunctionKey:
+            cycleLeft()
+            timer.invalidate()
+            timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(cycleRight), userInfo: nil, repeats: true)
+        case NSRightArrowFunctionKey:
+            cycleRight()
+            timer.invalidate()
+            timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(cycleRight), userInfo: nil, repeats: true)
+        default:
+            break
+        }
+    }
+
+    override var acceptsFirstResponder: Bool { get { return true } }
+
     @IBAction func cancelClicked(_ sender: NSButton) {
-        NSApp.endSheet(configurePanel)
+        //NSApp.endSheet(configurePanel)
     }
 
     @IBAction func okClicked(_ sender: NSButton) {
         let level = popupButton.indexOfSelectedItem + 1
         setLanguage(level: level)
 
-        NSApp.endSheet(configurePanel)
+        //NSApp.endSheet(configurePanel)
     }
 
     private func setLanguage(level: Int) {
@@ -107,7 +202,7 @@ class LanguageScreenSaverView: ScreenSaverView {
 
     override var configureSheet: NSWindow? {
         get {
-            Bundle(for: LanguageScreenSaverView.self).loadNibNamed(NSNib.Name(rawValue: "ConfigureSheet"), owner: self, topLevelObjects: nil)
+            Bundle(for: LanguageScreenSaverView.self).loadNibNamed(NSNib.Name("ConfigureSheet"), owner: self, topLevelObjects: nil)
 
             if let bundleIdentifier = Bundle(for: LanguageScreenSaverView.self).bundleIdentifier {
                 defaults = ScreenSaverDefaults.init(forModuleWithName: bundleIdentifier )
@@ -140,7 +235,7 @@ class Label: NSTextView {
 
     func makeBold() {
         if let fontSize = font?.pointSize {
-            textStorage?.addAttribute(NSAttributedStringKey.font, value: NSFont.boldSystemFont(ofSize: fontSize), range: NSRange(location: 0, length: string.count))
+            textStorage?.addAttribute(NSAttributedString.Key.font, value: NSFont.boldSystemFont(ofSize: fontSize), range: NSRange(location: 0, length: string.count))
         }
     }
 
@@ -205,5 +300,27 @@ class HSKDictionaryReader {
     }
 }
 
+// https://stackoverflow.com/questions/24026510/how-do-i-shuffle-an-array-in-swift
+extension MutableCollection {
+    /// Shuffles the contents of this collection.
+    mutating func shuffle() {
+        let c = count
+        guard c > 1 else { return }
 
+        for (firstUnshuffled, unshuffledCount) in zip(indices, stride(from: c, to: 1, by: -1)) {
+            // Change `Int` in the next line to `IndexDistance` in < Swift 4.1
+            let d: Int = numericCast(arc4random_uniform(numericCast(unshuffledCount)))
+            let i = index(firstUnshuffled, offsetBy: d)
+            swapAt(firstUnshuffled, i)
+        }
+    }
+}
 
+extension Sequence {
+    /// Returns an array with the contents of this sequence, shuffled.
+    func shuffled() -> [Element] {
+        var result = Array(self)
+        result.shuffle()
+        return result
+    }
+}

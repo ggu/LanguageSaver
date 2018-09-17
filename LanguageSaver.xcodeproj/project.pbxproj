@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		76FB31DC2120DBF100A1A4BB /* LanguageScreenSaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB31DB2120DBF100A1A4BB /* LanguageScreenSaverView.swift */; };
 		76FB31E2212125D900A1A4BB /* hsk2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 76FB31E1212125D900A1A4BB /* hsk2.txt */; };
-		76FB31E42121373400A1A4BB /* LanguageSaver.saver in CopyFiles */ = {isa = PBXBuildFile; fileRef = 76FB31CE2120DB3A00A1A4BB /* LanguageSaver.saver */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		76FB31EF2122559800A1A4BB /* hsk5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 76FB31EA2122559800A1A4BB /* hsk5.txt */; };
 		76FB31F02122559800A1A4BB /* hsk3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 76FB31EB2122559800A1A4BB /* hsk3.txt */; };
 		76FB31F12122559800A1A4BB /* hsk4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 76FB31EC2122559800A1A4BB /* hsk4.txt */; };
@@ -23,11 +22,10 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		76FB31E32121372900A1A4BB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "~/Library/Screen Savers";
 			dstSubfolderSpec = 0;
 			files = (
-				76FB31E42121373400A1A4BB /* LanguageSaver.saver in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +114,7 @@
 				76FB31CC2120DB3A00A1A4BB /* Resources */,
 				76FB31E32121372900A1A4BB /* CopyFiles */,
 				76FB31E92121409B00A1A4BB /* ShellScript */,
+				76DFEDD42140243D0061452B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -132,7 +131,7 @@
 		76FB31C52120DB3A00A1A4BB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Gabriel Uribe";
 				TargetAttributes = {
 					76FB31CD2120DB3A00A1A4BB = {
@@ -178,6 +177,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		76DFEDD42140243D0061452B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# xattr -cr ~/Desktop/test/Products/Users/gabrieluribe/Library/Screen Savers/LanguageSaver.saver || echo Clear\n";
+		};
 		76FB31E92121409B00A1A4BB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,7 +201,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "SCREEN_SAVER_PATH=\"${HOME}/Library/Screen Savers/${FULL_PRODUCT_NAME}\"\nif [[ -d \"${SCREEN_SAVER_PATH}\" || -f \"${SCREEN_SAVER_PATH}\" || -L \"${SCREEN_SAVER_PATH}\" ]]; then\nrm -Rf \"${SCREEN_SAVER_PATH}\"\nfi\nln -s \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\" \"${SCREEN_SAVER_PATH}\"";
+			shellScript = "SCREEN_SAVER_PATH=\"${HOME}/Library/Screen Savers/${FULL_PRODUCT_NAME}\"\nif [[ -d \"${SCREEN_SAVER_PATH}\" || -f \"${SCREEN_SAVER_PATH}\" || -L \"${SCREEN_SAVER_PATH}\" ]]; then\nrm -Rf \"${SCREEN_SAVER_PATH}\"\n fi\n ln -s \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\" \"${SCREEN_SAVER_PATH}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -208,6 +220,7 @@
 		76FB31D62120DB3A00A1A4BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -266,6 +279,7 @@
 		76FB31D72120DB3A00A1A4BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -311,6 +325,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
 		};
@@ -319,6 +334,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6SWS45C4S4;
@@ -331,8 +347,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabrieluribe.LanguageSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -342,6 +360,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 6SWS45C4S4;
@@ -354,7 +373,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabrieluribe.LanguageSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 4.2;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
