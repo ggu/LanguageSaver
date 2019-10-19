@@ -35,29 +35,22 @@ class LanguageScreenSaverView: ScreenSaverView {
             defaults = ScreenSaverDefaults.init(forModuleWithName: bundleIdentifier )
         }
 
-        if !isPreview {
-            Swift.print(getLanguageLevel())
+        allEntries = HSKDictionaryReader(fileName: getFileName()).getEntries()
+        allEntries.shuffle()
+        
+        let titleFrame = NSRect(x: 0, y: bounds.height / 2 + 200, width: bounds.width, height: 100)
+        title.frame = titleFrame
+        title.makeBold()
+        addSubview(title)
 
-            allEntries = HSKDictionaryReader(fileName: getFileName()).getEntries()
-            allEntries.shuffle()
-//            remainingEntries = allEntries
+        let subtitleFrame = NSRect(x: 0, y: bounds.height / 2 - 50, width: bounds.width, height: 100)
+        subtitle.frame = subtitleFrame
+        addSubview(subtitle)
 
-            let titleFrame = NSRect(x: 0, y: bounds.height / 2 + 200, width: bounds.width, height: 100)
-            title.frame = titleFrame
-            title.makeBold()
-            addSubview(title)
-
-            let subtitleFrame = NSRect(x: 0, y: bounds.height / 2 - 50, width: bounds.width, height: 100)
-            subtitle.frame = subtitleFrame
-            addSubview(subtitle)
-
-            timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(cycleRight), userInfo: nil, repeats: true)
-            timer.fire()
-        } else {
-            NSColor.white.setFill()
-        }
+        timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(cycleRight), userInfo: nil, repeats: true)
+        timer.fire()
     }
-
+    
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
 
