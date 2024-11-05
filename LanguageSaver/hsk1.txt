@@ -1,150 +1,150 @@
-﻿爱	愛	ai4	ài	love
-八	八	ba1	bā	eight
-爸爸	爸爸	ba4ba5	bàba	Dad
-杯子	杯子	bei1zi5	bēizi	cup; glass
-北京	北京	Bei3jing1	Běijīng	Beijing
-本	本	ben3	běn	measure word for books
-不客气	不客氣	bu2 ke4qi5	bú kèqi	you're welcome; don't be polite
-不	不	bu4	bù	no; not
-菜	菜	cai4	cài	dish (type of food); vegetables
-茶	茶	cha2	chá	tea
-吃	吃	chi1	chī	eat
-出租车	出租車	chu1zu1che1	chūzūchē	taxi; cab
-打电话	打電話	da3 dian4hua4	dǎ diànhuà	make a phone call
-大	大	da4	dà	big; large
-的	的	de5	de	indicates possession, like adding 's to a noun
-点	點	dian3	diǎn	a dot; a little; o'clock
-电脑	電腦	dian4nao3	diànnǎo	computer
-电视	電視	dian4shi4	diànshì	television; TV
-电影	電影	dian4ying3	diànyǐng	movie; film
-东西	東西	dong1xi5	dōngxi	things; stuff
-都	都	dou1	dōu	all; both
-读	讀	du2	dú	to read; to study
-对不起	對不起	dui4bu5qi3	duìbuqǐ	sorry
-多	多	duo1	duō	many
-多少	多少	duo1shao5	duōshao	how much?; how many?
-儿子	兒子	er2zi5	érzi	son
-二	二	er4	èr	two
-饭店	飯店	fan4dian4	fàndiàn	restaurant; hotel
-飞机	飛機	fei1ji1	fēijī	airplane
-分钟	分鐘	fen1zhong1	fēnzhōng	minute; (measure word for time)
-高兴	高興	gao1xing4	gāoxìng	happy; glad
-个	個	ge5	ge	general measure word
-工作	工作	gong1zuo4	gōngzuò	work; a job
-狗	狗	gou3	gǒu	dog
-汉语	漢語	Han4yu3	Hànyǔ	Chinese language
-好	好	hao3	hǎo	good
-号	號	hao4	hào	number; day of a month
-喝	喝	he1	hē	to drink
-和	和	he2	hé	and; with
-很	很	hen3	hěn	very; quite
-后面	后面	hou4mian5	hòumian	back; behind
-回	回	hui2	huí	to return; to reply; to go back
-会	會	hui4	huì	know how to
-几	幾	ji3	jǐ	how many; several; a few
-家	家	jia1	jiā	family; home
-叫	叫	jiao4	jiào	to be called
-今天	今天	jin1tian1	jīntiān	today
-九	九	jiu3	jiǔ	nine
-开	開	kai1	kāi	to open; to start; to operate (a vehicle)
-看	看	kan4	kàn	see; look at; to watch
-看见	看見	kan4jian4	kànjiàn	see; catch sight of
-块	塊	kuai4	kuài	lump; piece; sum of money
-来	來	lai2	lái	come; arrive; ever since; next
-老师	老師	lao3shi1	lǎoshī	teacher
-了	了	le5	le	indicates a completed or finished action
-冷	冷	leng3	lěng	cold
-里	裡	li3	lǐ	inside; Chinese mile (~.5 km)
-六	六	liu4	liù	six
-妈妈	媽媽	ma1ma5	māma	mom; mum
-吗	嗎	ma5	ma	indicates a yes/no question (added to a statement)
-买	買	mai3	mǎi	to buy
-猫	貓	mao1	māo	cat
-没关系	沒關系	mei2 guan1xi5	méi guānxi	it doesn't matter; never mind
-没有	沒有	mei2you3	méiyǒu	not have; there is not
-米饭	米飯	mi3fan4	mǐfàn	(cooked) rice
-明天	明天	ming2tian1	míngtiān	tomorrow
-名字	名字	ming2zi5	míngzi	name
-哪	哪	na3	nǎa	which; how
-哪儿	哪兒	na3r5	nǎr	where? (Beijing accent)
-那	那	na4	nà	that; then
-呢	呢	ne5	ne	indicates a question; how about...?;
-能	能	neng2	néng	can; be able
-你	你	ni3	nǐ	you (singular)
-年	年	nian2	nián	year
-女儿	女兒	nv3'er2	nǚ'ér	daughter
-朋友	朋友	peng2you5	péngyou	friend
-漂亮	漂亮	piao4liang5	piàoliang	pretty; beautiful
-苹果	蘋果	ping2guo3	píngguǒ	apple
-七	七	qi1	qī	seven
-钱	錢	qian2	qián	money; coin
-前面	前面	qian2mian4	qiánmiàn	in front
-请	請	qing3	qǐng	please; invite; to treat someone to something
-去	去	qu4	qù	go; to leave
-热	熱	re4	rè	heat; hot
-人	人	ren2	rén	person; man; people
-认识	認識	ren4shi5	rènshi	recognize; know (a person)
-三	三	san1	sān	three
-商店	商店	shang1dian4	shāngdiàn	shop; store
-上	上	shang4	shàng	above; up
-上午	上午	shang4wu3	shàngwǔ	late morning (before noon)
-少	少	shao3	shǎo	few; little
-谁	誰	shei2	shéi	who
-什么	什麼	shen2me5	shénme	what? (replaces the noun to turn a statement into a question)
-十	十	shi2	shí	ten
-时候	時候	shi2hou5	shíhou	time
-是	是	shi4	shì	be; is; are; am
-书	書	shu1	shū	book; letter
-水	水	shui3	shuǐ	water
-水果	水果	shui3guo3	shuǐguǒ	fruit
-睡觉	睡覺	shui4 jiao4	shuì jiào	to sleep; go to bed
-说	說	shuo1	shuō	speak
-四	四	si4	sì	four
-岁	歲	sui4	suì	years old; age
-他	他	ta1	tā	he; him
-她	她	ta1	tā	she
-太	太	tai4	tài	too (much)
-天气	天氣	tian1qi4	tiānqì	weather
-听	聽	ting1	tīng	listen; hear
-同学	同學	tong2xue2	tóngxué	fellow student; schoolmate
-喂	喂	wei4	wèi	hello (on the phone)
-我	我	wo3	wǒ	I; me
-我们	我們	wo3men5	wǒmen	we; us
-五	五	wu3	wǔ	five
-喜欢	喜歡	xi3huan5	xǐhuan	to like
-下	下	xia4	xià	fall; below
-下午	下午	xia4wu3	xiàwǔ	afternoon
-下雨	下雨	xia4yu3	xiàyǔ	to rain
-先生	先生	xian1sheng5	xiānsheng	Mr.; Sir
-现在	現在	xian4zai4	xiànzài	now
-想	想	xiang3	xiǎng	think; believe; suppose; would like to
-小	小	xiao3	xiǎo	small; young
-小姐	小姐	xiao3jie5	xiǎojie	young lady; miss; Ms.
-些	些	xie1	xiē	some; few; several
-写	寫	xie3	xiě	to write; to compose
-谢谢	謝謝	xie4xie5	xièxie	thank you
-星期	星期	xing1qi1	xīngqī	week
-学生	學生	xue2sheng5	xuésheng	student
-学习	學習	xue2xi2	xuéxí	learn; to study
-学校	學校	xue2xiao4	xuéxiào	school
-一	一	yi1	yī	one; once; a
-衣服	衣服	yi1fu5	yīfu	clothes
-医生	醫生	yi1sheng1	yīshēng	doctor
-医院	醫院	yi1yuan4	yīyuàn	hospital
-椅子	椅子	yi3zi5	yǐzi	chair
-一点儿	一點兒	yi4dian3r5	yìdiǎnr	a bit; a few
-有	有	you3	yǒu	have
-月	月	yue4	yuè	moon; month
-在	在	zai4	zài	at; on; in; indicates an action in progress
-再见	再見	zai4jian4	zàijiàn	goodbye; see you later
-怎么	怎麼	zen3me5	zěnme	how?
-怎么样	怎麼樣	zen3me5yang4	zěnmeyàng	how about?; how is/was it?
-这	這	zhe4	zhè	this
-中国	中國	Zhong1guo2	Zhōngguó	China
-中午	中午	zhong1wu3	zhōngwǔ	noon; midday
-住	住	zhu4	zhù	to live; reside; to stop
-桌子	桌子	zhuo1zi5	zhuōzi	table; desk
-字	字	zi4	zì	letter; character
-昨天	昨天	zuo2tian1	zuótiān	yesterday
-做	做	zuo4	zuò	do; make
-坐	坐	zuo4	zuò	sit
+爱	愛	ai4	ài	love	我爱我的家人。
+八	八	ba1	bā	eight	这个月我有八个生日派对。
+爸爸	爸爸	ba4ba5	bàba	Dad	爸爸很高兴。
+杯子	杯子	bei1zi5	bēizi	cup; glass	这是我的杯子。
+北京	北京	Bei3jing1	Běijīng	Beijing	北京是中国的首都。
+本	本	ben3	běn	measure word for books	这本书很有趣。
+不客气	不客氣	bu2 ke4qi5	bú kèqi	you're welcome; don't be polite	不客气。
+不	不	bu4	bù	no; not	我不是老师。
+菜	菜	cai4	cài	dish (type of food); vegetables	这个菜很好吃。
+茶	茶	cha2	chá	tea	你喜欢喝茶吗？
+吃	吃	chi1	chī	eat	我喜欢吃水果。
+出租车	出租車	chu1zu1che1	chūzūchē	taxi; cab	我要坐出租车。
+打电话	打電話	da3 dian4hua4	dǎ diànhuà	make a phone call	我要打电话。
+大	大	da4	dà	big; large	这个房间很大。
+的	的	de5	de	indicates possession, like adding 's to a noun	这是我的书。
+点	點	dian3	diǎn	a dot; a little; o'clock	我想吃点水果。
+电脑	電腦	dian4nao3	diànnǎo	computer	我有一台电脑。
+电视	電視	dian4shi4	diànshì	television; TV	我喜欢看电视。
+电影	電影	dian4ying3	diànyǐng	movie; film	我喜欢看电影。
+东西	東西	dong1xi5	dōngxi	things; stuff	这是我的东西。
+都	都	dou1	dōu	all; both	他们都很高兴。
+读	讀	du2	dú	to read; to study	我喜欢读书。
+对不起	對不起	dui4bu5qi3	duìbuqǐ	sorry	对不起，我迟到了。
+多	多	duo1	duō	many	这里有很多人。
+多少	多少	duo1shao5	duōshao	how much?; how many?	你有多少兄弟姐妹？
+儿子	兒子	er2zi5	érzi	son	他是我的儿子。
+二	二	er4	èr	two	我有两个苹果。
+饭店	飯店	fan4dian4	fàndiàn	restaurant; hotel	我们去饭店吃饭。
+飞机	飛機	fei1ji1	fēijī	airplane	飞机很快。
+分钟	分鐘	fen1zhong1	fēnzhōng	minute; (measure word for time)	我们等了十分钟。
+高兴	高興	gao1xing4	gāoxìng	happy; glad	我很高兴。
+个	個	ge5	ge	general measure word	我有一个弟弟。
+工作	工作	gong1zuo4	gōngzuò	work; a job	我工作。
+狗	狗	gou3	gǒu	dog	我家有一只狗。
+汉语	漢語	Han4yu3	Hànyǔ	Chinese language	我学习汉语。
+好	好	hao3	hǎo	good	你好。
+号	號	hao4	hào	number; day of a month	今天几号？
+喝	喝	he1	hē	to drink	我喝水。
+和	和	he2	hé	and; with	我喜欢喝茶和咖啡。
+很	很	hen3	hěn	very; quite	他很高。
+后面	后面	hou4mian5	hòumian	back; behind	他在后面等我。
+回	回	hui2	huí	to return; to reply; to go back	我回家了。
+会	會	hui4	huì	know how to	我会说中文。
+几	幾	ji3	jǐ	how many; several; a few	几个苹果。
+家	家	jia1	jiā	family; home	我家很大。
+叫	叫	jiao4	jiào	to be called	他叫什么名字？
+今天	今天	jin1tian1	jīntiān	today	今天天气很好。
+九	九	jiu3	jiǔ	nine	九点了。
+开	開	kai1	kāi	to open; to start; to operate (a vehicle)	我要开车。
+看	看	kan4	kàn	see; look at; to watch	我喜欢看书。
+看见	看見	kan4jian4	kànjiàn	see; catch sight of	我看见你了。
+块	塊	kuai4	kuài	lump; piece; sum of money	这个苹果五块钱。
+来	來	lai2	lái	come; arrive; ever since; next	你什么时候来？
+老师	老師	lao3shi1	lǎoshī	teacher	老师很好。
+了	了	le5	le	indicates a completed or finished action	我吃了。
+冷	冷	leng3	lěng	cold	今天很冷。
+里	裡	li3	lǐ	inside; Chinese mile (~.5 km)	杯子里有水。
+六	六	liu4	liù	six	我家有六口人。
+妈妈	媽媽	ma1ma5	māma	mom; mum	妈妈很忙。
+吗	嗎	ma5	ma	indicates a yes/no question (added to a statement)	你是老师吗？
+买	買	mai3	mǎi	to buy	我要买水果。
+猫	貓	mao1	māo	cat	这是一只猫。
+没关系	沒關系	mei2 guan1xi5	méi guānxi	it doesn't matter; never mind	没关系，我可以帮你。
+没有	沒有	mei2you3	méiyǒu	not have; there is not	我没有钱。
+米饭	米飯	mi3fan4	mǐfàn	(cooked) rice	我喜欢吃米饭。
+明天	明天	ming2tian1	míngtiān	tomorrow	明天我要去图书馆。
+名字	名字	ming2zi5	míngzi	name	你叫什么名字？
+哪	哪	na3	nǎa	which; how	你喜欢哪个颜色？
+哪儿	哪兒	na3r5	nǎr	where? (Beijing accent)	你住在哪儿？
+那	那	na4	nà	that; then	那是我的书。
+呢	呢	ne5	ne	indicates a question; how about...?;	你喜欢吃水果呢？
+能	能	neng2	néng	can; be able	我能说中文。
+你	你	ni3	nǐ	you (singular)	你好吗？
+年	年	nian2	nián	year	我今年二十岁。
+女儿	女兒	nv3'er2	nǚ'ér	daughter	她是我的女儿。
+朋友	朋友	peng2you5	péngyou	friend	我有很多朋友。
+漂亮	漂亮	piao4liang5	piàoliang	pretty; beautiful	她很漂亮。
+苹果	蘋果	ping2guo3	píngguǒ	apple	我喜欢吃苹果。
+七	七	qi1	qī	seven	我家有七个人。
+钱	錢	qian2	qián	money; coin	我没有钱。
+前面	前面	qian2mian4	qiánmiàn	in front	他在前面。
+请	請	qing3	qǐng	please; invite; to treat someone to something	请坐。
+去	去	qu4	qù	go; to leave	我要去学校。
+热	熱	re4	rè	heat; hot	今天很热。
+人	人	ren2	rén	person; man; people	这个人很高。
+认识	認識	ren4shi5	rènshi	recognize; know (a person)	我认识你。
+三	三	san1	sān	three	他有三个兄弟。
+商店	商店	shang1dian4	shāngdiàn	shop; store	我喜欢去商店买东西。
+上	上	shang4	shàng	above; up	他的家在上面。
+上午	上午	shang4wu3	shàngwǔ	late morning (before noon)	上午我去学校。
+少	少	shao3	shǎo	few; little	他会说少数汉语。
+谁	誰	shei2	shéi	who	谁是老师？
+什么	什麼	shen2me5	shénme	what? (replaces the noun to turn a statement into a question)	你想吃什么？
+十	十	shi2	shí	ten	我学了十个汉字。
+时候	時候	shi2hou5	shíhou	time	我喜欢晚上的时候。
+是	是	shi4	shì	be; is; are; am	他是老师。
+书	書	shu1	shū	book; letter	我喜欢看书。
+水	水	shui3	shuǐ	water	我喜欢喝水。
+水果	水果	shui3guo3	shuǐguǒ	fruit	我喜欢吃水果。
+睡觉	睡覺	shui4 jiao4	shuì jiào	to sleep; go to bed	我要睡觉了。
+说	說	shuo1	shuō	speak	他说中文。
+四	四	si4	sì	four	我家有四口人。
+岁	歲	sui4	suì	years old; age	我十八岁。
+他	他	ta1	tā	he; him	他是我的朋友。
+她	她	ta1	tā	she	她是老师。
+太	太	tai4	tài	too (much)	这个苹果太甜了。
+天气	天氣	tian1qi4	tiānqì	weather	今天天气很好。
+听	聽	ting1	tīng	listen; hear	我听音乐。
+同学	同學	tong2xue2	tóngxué	fellow student; schoolmate	我们是同学。
+喂	喂	wei4	wèi	hello (on the phone)	喂，你好吗？
+我	我	wo3	wǒ	I; me	我很高兴。
+我们	我們	wo3men5	wǒmen	we; us	我们是朋友。
+五	五	wu3	wǔ	five	我有五个苹果。
+喜欢	喜歡	xi3huan5	xǐhuan	to like	我喜欢吃水果。
+下	下	xia4	xià	fall; below	他下了楼梯。
+下午	下午	xia4wu3	xiàwǔ	afternoon	我喜欢下午喝茶。
+下雨	下雨	xia4yu3	xiàyǔ	to rain	今天下雨了。
+先生	先生	xian1sheng5	xiānsheng	Mr.; Sir	这是先生的书。
+现在	現在	xian4zai4	xiànzài	now	现在我在吃饭。
+想	想	xiang3	xiǎng	think; believe; suppose; would like to	我想喝水。
+小	小	xiao3	xiǎo	small; young	我有一只小狗。
+小姐	小姐	xiao3jie5	xiǎojie	young lady; miss; Ms.	小姐，请问这里有厕所吗？
+些	些	xie1	xiē	some; few; several	我有些书。
+写	寫	xie3	xiě	to write; to compose	我写字。
+谢谢	謝謝	xie4xie5	xièxie	thank you	谢谢你。
+星期	星期	xing1qi1	xīngqī	week	星期一是工作日。
+学生	學生	xue2sheng5	xuésheng	student	他是学生。
+学习	學習	xue2xi2	xuéxí	learn; to study	我喜欢学习汉语。
+学校	學校	xue2xiao4	xuéxiào	school	我去学校。
+一	一	yi1	yī	one; once; a	我有一只猫。
+衣服	衣服	yi1fu5	yīfu	clothes	我喜欢买衣服。
+医生	醫生	yi1sheng1	yīshēng	doctor	医生很忙。
+医院	醫院	yi1yuan4	yīyuàn	hospital	我去医院。
+椅子	椅子	yi3zi5	yǐzi	chair	这把椅子很舒服。
+一点儿	一點兒	yi4dian3r5	yìdiǎnr	a bit; a few	我想喝一点儿水。
+有	有	you3	yǒu	have	我有一只猫。
+月	月	yue4	yuè	moon; month	今天是几月？
+在	在	zai4	zài	at; on; in; indicates an action in progress	我在家。
+再见	再見	zai4jian4	zàijiàn	goodbye; see you later	明天再见。
+怎么	怎麼	zen3me5	zěnme	how?	怎么样？
+怎么样	怎麼樣	zen3me5yang4	zěnmeyàng	how about?; how is/was it?	你怎么样？
+这	這	zhe4	zhè	this	这是我的书。
+中国	中國	Zhong1guo2	Zhōngguó	China	中国人很友好。
+中午	中午	zhong1wu3	zhōngwǔ	noon; midday	我喜欢中午吃米饭。
+住	住	zhu4	zhù	to live; reside; to stop	我住在北京。
+桌子	桌子	zhuo1zi5	zhuōzi	table; desk	桌子上有一个杯子。
+字	字	zi4	zì	letter; character	这个字很容易写。
+昨天	昨天	zuo2tian1	zuótiān	yesterday	昨天我去商店。
+做	做	zuo4	zuò	do; make	我喜欢做饭。
+坐	坐	zuo4	zuò	sit	我坐在椅子上。

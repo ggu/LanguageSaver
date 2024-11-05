@@ -15,6 +15,7 @@ class LanguageScreenSaverView: ScreenSaverView {
 
     var title: Label = Label(text: "", size: 80, frame: NSRect())
     var subtitle: Label = Label(text: "", size: 40, frame: NSRect())
+    var sentence: Label = Label(text: "", size: 40, frame: NSRect())
     var allEntries: [DictionaryEntry] = []
 //    var prevEntries: [DictionaryEntry] = []
 //    var prevEntries: [DictionaryEntry] = []
@@ -47,6 +48,10 @@ class LanguageScreenSaverView: ScreenSaverView {
         subtitle.frame = subtitleFrame
         addSubview(subtitle)
 
+        let sentenceFrame = NSRect(x: 0, y: bounds.height / 2 - 200, width: bounds.width, height: 100)
+        sentence.frame = sentenceFrame
+        addSubview(sentence)
+
         timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(cycleRight), userInfo: nil, repeats: true)
         timer.fire()
     }
@@ -68,6 +73,7 @@ class LanguageScreenSaverView: ScreenSaverView {
         }
         title.update(text: allEntries[currentIndex].word)
         subtitle.update(text: allEntries[currentIndex].definition)
+        sentence.update(text: allEntries[currentIndex].sentence)
     }
 
     @objc func cycleLeft() {
@@ -78,6 +84,7 @@ class LanguageScreenSaverView: ScreenSaverView {
         }
         title.update(text: allEntries[currentIndex].word)
         subtitle.update(text: allEntries[currentIndex].definition)
+        sentence.update(text: allEntries[currentIndex].sentence)
     }
 
     override func flagsChanged(with event: NSEvent) {
@@ -250,6 +257,7 @@ class Label: NSTextView {
 struct DictionaryEntry {
     let word: String
     let definition: String
+    let sentence: String
 }
 
 class HSKDictionaryReader {
@@ -271,8 +279,9 @@ class HSKDictionaryReader {
                 let character = lineData[0]
                 let pinyin = lineData[3]
                 let definition = lineData[4]
+                let sentence = lineData[5]
 
-                let entry = DictionaryEntry(word: "\(character) \(pinyin)", definition: definition)
+                let entry = DictionaryEntry(word: "\(character) \(pinyin)", definition: definition, sentence: sentence)
                 dictionaryEntries.append(entry)
             }
         }
